@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+    font-size: 18px;
+    line-height: 140%;
+    color: #1F1E1E;
+}
+
+a{
+    text-decoration: none; /* Уберает подчеркивание под ссылкой */
+    color: inherit; /* Наследие родительского класса */
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 auto;
+    /* border: 3px solid black; */
+}
+
+/* Блок header */
+.header{
+    background-image: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.header__inner{
+    display: flex; /* Задаем родителю значение flex. Размещаем все дочерние элементы в строку 
+                    Это свойство позволяет нам размещать дочерние эементы любым способом в любое место*/
+    flex-direction: column; /* Меняем ось размещения  дочерних элементов на вертикалную (размещаем в колонку) */
+    justify-content: space-between; /* Раскидывает все элементы по краям, относительно друг друга */
+    min-height: 100vh; /* размещает картинку фона на весь экран */
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Дает возможность перемещать блоки на следущую строку */
+    align-items: center;
+    padding: 16px 0 49px;    
+}
+
+.header__phone{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: white;
+}
+
+.header__phone-number{
+    font-weight: 400;
+    margin-left: 19px;
+    padding: 12px 31px 13px 31px;
+    background: #886239;
+    border-radius: 22px;
+}
+
+.menu{
+    width: 100%; /* Задаем максимальную ширину для нашей навигационной панели */
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    padding: 27px 0 24px;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.header__title{ 
+    font-family: 'PT Serif', serif;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.header__descr{
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 420px;
+    margin-bottom: 20px;
+}
+
+.header__btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 19px 54px 20px 55px;
+    background-color: #886239;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+ .header__arrow{
+    text-align: center;
+    margin-bottom: 15px;
+} 
+
+/* Блок "Направления" */
+.direction{
+    padding: 100px 0;
+}
+
+.deriction__inner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
+
+.direction__img{
+    display: block;
+}
+
+.direction__text{
+    font-size: 16px;
+    border: 1px solid #D9D9DE;
+    border-top: none;
+    padding: 10px 19px 14px;
+}
