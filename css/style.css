@@ -17,6 +17,13 @@ a{
     color: inherit; /* Наследие родительского класса */
 }
 
+.title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+    }
+
 .container{
     max-width: 1120px;
     margin: 0 auto;
@@ -130,4 +137,33 @@ a{
     border: 1px solid #D9D9DE;
     border-top: none;
     padding: 10px 19px 14px;
+}
+
+.travel-info{
+    background-image: url('../images/travel-info-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 30px 0 50px;
+}
+
+.travel-info__title {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.travel-info__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 54px 67px;
+}
+
+.travel-info__img{
+    margin-bottom: 15px;
+}
+
+.travel-info__text{
+    color: white;
+    font-size: 16px;
+    line-height: 130%;
 }
