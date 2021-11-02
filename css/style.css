@@ -167,3 +167,151 @@ a{
     font-size: 16px;
     line-height: 130%;
 }
+
+/* Блок "Популярные предложения" */
+.popular{
+    padding: 100px 0;
+}
+
+.popular__title{
+    margin-bottom: 40px;
+}
+
+.popular__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 32px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #D9D9DE;
+}
+
+.popular__link{
+    padding: 16px 24px 19px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 256px;
+    line-height: 130%;
+}
+
+/* Обращение к определленному дочернему елементу толко в том случае, когда  между елементами не вставлено никаких посторонних блоков и т.п. */
+.popular__link:nth-child(3),
+.popular__link:nth-child(6){
+    grid-column: span 2; /* начинается в том же месте где и сейчас (а той же точке) и занимает 2 колонки */
+    grid-row: span 2; /* начинается в том же месте где и сейчас (а той же точке) и занимает 2 строки */
+}
+
+.popular__link-title{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.popular__link-title--big {
+    font-size: 24px;
+}
+
+.popular__price{
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: auto;
+}
+
+.popular__country, .popular__time{
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 15px;
+}
+
+
+/* Блок "Карта Африки" */
+.map{
+    margin-bottom: 100px;
+}
+
+.map__title{
+    margin-bottom: 46px;
+}
+
+/* Блок "О сафари турах" */
+.about{
+    margin-bottom: 100px;
+}
+
+.about__inner{
+    display: grid;                      
+    grid-template-columns: 448px 640px; /* разделяем на два блока один 448 другой 640 по ширине */
+    grid-template-rows: repeat();
+    grid-gap: 32px;                     /* расстояние между блоками 32 */
+}
+
+
+.about__title{
+    text-align: left;
+    margin-bottom: 25px;
+}
+.about__text{
+    margin-bottom: 34px;
+}
+
+.about__link{
+    line-height: 19px;
+    font-size: 16px;
+    text-decoration-line: underline;
+    color: #C4C4C4;
+}
+
+.about__popup{
+    background-image: url('../images/video-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Блок "Фотогалерея" */
+.gallery{
+    padding: 49px 0 55px;
+    /* margin-bottom: 100px; */
+    background: #886239;
+    color: #fff;
+}
+
+.gallery__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-right: 160px;
+}
+
+.gallery__link{
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+}
+
+.gallery__item-inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+}
+
+.slick-btn{
+    background-color: transparent; /* применяет такой же цвет как и  задний фон */
+    border: none;
+    cursor: pointer;
+    position: absolute; /* задаем двум  стрелочкам абсольтные позиции */
+    top: -85px;
+    right: 0;
+}
+
+.slick-prev{
+    right: 60px;
+}
