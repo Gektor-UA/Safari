@@ -278,7 +278,7 @@ a{
 /* Блок "Фотогалерея" */
 .gallery{
     padding: 49px 0 55px;
-    /* margin-bottom: 100px; */
+    /* margin-bottom: 100px;  */
     background: #886239;
     color: #fff;
 }
@@ -314,4 +314,222 @@ a{
 
 .slick-prev{
     right: 60px;
+}
+
+/* Блок "Сафари тур премиум класса" */
+.tour{
+    padding: 100px 0;
+}
+
+.tour__title{
+    margin-bottom: 77px;
+}
+
+.tour__box{
+    column-count: 2; /* Разделяет текст на два столбика */
+    column-gap: 46px; /* устанавливает расстояние между колонками */
+    border-bottom: 1px solid #D9D9DE;
+    padding-bottom: 50px;
+    margin-bottom: 44px;
+}
+
+.tour__text{
+    margin-bottom: 15px;
+}
+
+.tour__text span{
+    font-weight: 700;
+}
+
+.tour__info{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 70px;
+}
+
+.tour__info-item{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 60px;
+    color: #886239;
+    text-align: center;
+}
+
+.tour__info-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #1F1E1E;
+}
+
+/* Блок "Забронируйте отдых в Африке" */
+.booking{
+    background: #EAEAEA;
+    min-height: 550px;
+    padding: 75px 0;
+}
+
+.bookking__title{
+    margin-bottom: 54px;
+}
+
+.booking__form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+.booking__input{
+    width: 256px;
+    height: 44px;
+    border: 1px solid #D9D9DE;
+    padding: 11px 14px 12px;
+    margin-bottom: 28px;
+    font-size: 16px;
+}
+.booking__input::placeholder,
+.booking__textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #C4C4C4;
+}
+
+.booking__textarea{
+    width: 100%;
+    height: 112px;
+    padding: 14px;
+    border: 1px solid #D9D9DE;
+    resize: none; /* Убирает ползунок внизу справа */
+    margin-bottom: 67px;
+}
+
+.booking__btn{
+    background: #886239;
+    border-radius: 30px;
+    border:none;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 20px 65px;
+    cursor: pointer;
+}
+
+.booking__label{
+    font-size: 16px;
+    line-height: 130%; 
+    text-decoration-line: underline;
+    color: #1F1E1E;
+    display: flex;
+    align-items: center;
+}
+
+.booking__checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    padding-left: 45px;
+}
+
+.booking__checkbox-style{
+    width: 26px;
+    height: 26px;
+    border: 2px solid #C4C4C4;
+    border-radius: 2px;
+    position: absolute;
+    margin-left: -45px;
+}
+
+.booking__checkbox:checked + .booking__checkbox-style::before{
+    content:'';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #c4c4c4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Блок "Подвал сайта footer" */
+.footer{
+    background: #1F1E1E;
+    padding: 80px;
+}
+
+.footer__logo{
+    text-align: center;
+    margin-bottom: 69px;
+}
+
+.footer__box{
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    font-size: 14px;
+    line-height: 130%;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 120px; */
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+/* .footer__box-title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+}
+
+.footer__copy, .footer__adress-text, .footer__phone, .footer__mail{
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.footer__link{
+    font-size: 13px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-decoration: underline;
+} */
+
+.footer__info {
+    width: 225px;
+}
+.footer__box-title {
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+.footer__copy {
+    margin-bottom: 3px;
+    opacity: 0.8;
+}
+.footer__link {
+    text-decoration: underline;
+}
+.footer__adress {
+    width: 165px;
+}
+.footer__adress-text {
+    opacity: 0.8;
+}
+.footer__contacts {
+    width: 210px;
+}
+.footer__phone {
+    opacity: 0.8;
+}
+.footer__mail {
+    opacity: 0.8;
+    display: block;
 }
